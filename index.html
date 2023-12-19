@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Boostrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <title>Document</title>
+</head>
+
+<body class="p-5">
+    <div class="card">
+        <div class="card-header">
+            <h1>Payment form example</h1>
+        </div>
+        <div class="card-body">
+            <div class="alert alert-danger" role="alert">
+                Some fields are missing
+            </div>
+            <form class="row g-3">
+                <!-- inputmode="numeric" pattern="[0-9]*" -->
+                <div class="col-md-5">
+                    <label for="inputCard" class="form-label fw-bold">Card #</label>
+                    <input type="text" class="form-control" id="inputCard" placeholder="XXXXXXXXXXXXXXXXX" />
+                </div>
+                <div class="col-md-3">
+                    <label for="CVC" class="form-label fw-bold">CVC #</label>
+                    <input type="text" class="form-control" id="CVC" placeholder="0000" />
+                </div>
+                <div class="col-4">
+                    <label for="Amount" class="form-label fw-bold">Amount</label>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="basic-addon1">$</span>
+                        <input type="text" class="form-control" placeholder="Amount" />
+                    </div>
+                </div>
+                <div class="col-6">
+                    <label for="firstName" class="form-label fw-bold">First Name</label>
+                    <input type="text" class="form-control" id="firstName" />
+                </div>
+                <div class="col-6">
+                    <label for="lastName" class="form-label fw-bold">Last Name</label>
+                    <input type="text" class="form-control" id="lastName" />
+                </div>
+                <div class="col-md-6">
+                    <label for="inputCity" class="form-label fw-bold">City</label>
+                    <input type="text" class="form-control" id="inputCity" />
+                </div>
+                <div class="col-md-3">
+                    <label for="inputState" class="form-label fw-bold">State</label>
+                    <select id="inputState" class="form-select">
+                        <option selected>Pick a state</option>
+                        <option>...</option>
+                    </select>
+                </div>
+                <div class="col-md-3">
+                    <label for="inputZip" class="form-label fw-bold">Postal Code</label>
+                    <input type="text" class="form-control" id="inputZip" />
+                </div>
+                <div class="col-md-6">
+                    <label for="inputZip" class="form-label w-100 fw-bold">We accept</label>
+                    <div class="col-md-5 bg-secondary text-white rounded p-2" style="width: fit-content;">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                                value="option1" />
+                            <label class="form-check-label" for="inlineRadio1"><i
+                                    class="fa-brands fa-cc-mastercard"></i></label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                                value="option2" />
+                            <label class="form-check-label" for="inlineRadio2"><i
+                                    class="fa-brands fa-cc-visa"></i></label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                                value="option1" />
+                            <label class="form-check-label" for="inlineRadio1"><i
+                                    class="fa-brands fa-cc-diners-club"></i></label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                                value="option1" />
+                            <label class="form-check-label" for="inlineRadio1"><i
+                                    class="fa-brands fa-cc-apple-pay"></i></label>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <label for="inputPassword5" class="form-label fw-bold">Message</label>
+                    <textarea id="inputPassword5" class="form-control" rows="3" ></textarea>
+                    <div id="passwordHelpBlock" class="form-text">
+                        And any notes here.
+                    </div>
+                    <!-- <label for="exampleFormControlTextarea1" class="form-label fw-bold">Message</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder=""></textarea>
+                    <p>Add any notes here.</p> -->
+                </div>
+            </form>
+        </div>
+        <div class="card-footer text-body-secondary">
+            <div class="col-12 text-end">
+                <button type="submit" class="btn btn-secondary">Cancel</button>
+                <button type="submit" class="btn btn-primary">Send</button>
+            </div>
+        </div>
+    </div>
+    <!-- JS Boostrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <!-- Fontawesome JS -->
+    <script src="https://kit.fontawesome.com/b557a4f1a1.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
